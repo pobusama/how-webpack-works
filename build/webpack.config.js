@@ -6,9 +6,6 @@ module.exports = {
   devtool: 'source-map',
   entry: resolve('../src/index.js'),
   output: {
-    filename: 'main.js',
-    path: resolve('../dist'),
-    chunkFilename: '[name].bundle.js',
-    publicPath: '/dist/'
+    path: resolve('../dist')
   }
 };
