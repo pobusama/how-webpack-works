@@ -6,6 +6,7 @@ module.exports = {
   devtool: 'source-map',
   entry: resolve('../src/index.js'),
   output: {
-    path: resolve('../dist')
+    path: resolve('../dist'),
+    publicPath: '/dist/'
   }
 };

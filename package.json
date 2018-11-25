@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --config build/webpack.config.js"
+    "build": "rm -rf dist && webpack --config build/webpack.config.js"
   },
   "keywords": [
     "webpack"

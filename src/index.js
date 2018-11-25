@@ -1,5 +1,7 @@
-import {plus, minus} from './utils/math.js';
+document.write('Hello webpack!\n');
 
-document.writeln('Hello webpack!');
-document.writeln('1 + 2: ', plus(1, 2));
-document.writeln('1 - 2: ', minus(1, 2));
+window.setTimeout(() => {
+  import('./utils/sum').then(sumUtil => {
+    console.log(sumUtil.sum([1, 2, 3, 4]));
+  });
+}, 2000);
